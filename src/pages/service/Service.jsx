@@ -1,5 +1,5 @@
 import React from "react";
-import { FaEye, FaLink, FaSitemap } from "react-icons/fa";
+import { FaEye, FaLink, FaRegUserCircle, FaSearch, FaSitemap, FaUserAltSlash, FaUserAstronaut, FaUserCheck, FaUserClock, FaUserGraduate } from "react-icons/fa";
 import ServiceCard from "../../components/Card/ServiceCard";
 
 function Service() {
@@ -25,6 +25,27 @@ function Service() {
       title: "Maquettage web et mobile​",
       description:
         "Concrétiser des idées à travers des interfaces UI, votre site web, application web, ou mobile, grâce votre identité visuelle.",
+    },
+    {
+      id: 4,
+      icon: <FaSearch size={size} />,
+      title: "Référencement SEO et SMO",
+      description:
+        "Accroître sa visibilité naturellement dans les moteurs de recherches Google et par ailleurs grâce aux réseaux sociaux.",
+    },
+    {
+      id: 1,
+      icon: <FaRegUserCircle size={size} />,
+      title: "Réalisation de support de communication​",
+      description:
+        "Rendez-vous visible et exploser vos ventes, grâce aux affiches, étiquettes, kakemono, brochure ...",
+    },
+    {
+      id: 3,
+      icon: <FaUserAltSlash size={size} />,
+      title: "Aide et formations en TIC​",
+      description:
+        "Finir les difficultés dans les langages de programmation (Html, CSS, PHP, MySQL, Javascript…). Encore plus astuces et de lumière sur les bonnes manières en User Experience et User Interface.",
     },
   ];
 
