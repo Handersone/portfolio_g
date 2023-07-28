@@ -26,20 +26,20 @@ function Service() {
       description:
         "Concrétiser des idées à travers des interfaces UI, votre site web, application web, ou mobile, grâce votre identité visuelle.",
     },
-    {
-      id: 4,
-      icon: <FaSearch size={size} />,
-      title: "Référencement SEO et SMO",
-      description:
-        "Accroître sa visibilité naturellement dans les moteurs de recherches Google et par ailleurs grâce aux réseaux sociaux.",
-    },
-    {
-      id: 1,
-      icon: <FaRegUserCircle size={size} />,
-      title: "Réalisation de support de communication​",
-      description:
-        "Rendez-vous visible et exploser vos ventes, grâce aux affiches, étiquettes, kakemono, brochure ...",
-    },
+    // {
+    //   id: 4,
+    //   icon: <FaSearch size={size} />,
+    //   title: "Référencement SEO et SMO",
+    //   description:
+    //     "Accroître sa visibilité naturellement dans les moteurs de recherches Google et par ailleurs grâce aux réseaux sociaux.",
+    // },
+    // {
+    //   id: 1,
+    //   icon: <FaRegUserCircle size={size} />,
+    //   title: "Réalisation de support de communication​",
+    //   description:
+    //     "Rendez-vous visible et exploser vos ventes, grâce aux affiches, étiquettes, kakemono, brochure ...",
+    // },
     {
       id: 3,
       icon: <FaUserAltSlash size={size} />,
@@ -53,7 +53,7 @@ function Service() {
     <div className="container_land py-20 flex flex-col gap-12">
       <span className="text-white text-[60px] font-extrabold">Services</span>
 
-      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 gap-x-8">
+      <div className=" grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-3 gap-x-8">
         {services.map((item) => {
           return (
             <ServiceCard
@@ -64,7 +64,6 @@ function Service() {
             />
           );
         })}
-        ]
       </div>
     </div>
   );

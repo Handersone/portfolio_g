@@ -1,5 +1,5 @@
 import React from "react";
-import { HeroSection, Navbar, Footer, Service, Portfolio, About } from "./index";
+import { HeroSection, Navbar, Footer, Service, Portfolio, Language, About, Client, Accueil, Projet, Formulaire } from "./index";
 import Landinglayout from "../layouts/Landinglayout";
 
 function Landingpage() {
@@ -7,9 +7,14 @@ function Landingpage() {
     <Landinglayout>
       <>
         {/* <HeroSection /> */}
+        <Accueil />
         <About />
+        <Language />
         <Service />
-        <Portfolio />
+        {/* <Portfolio /> */}
+        <Client />
+        <Projet />
+        <Formulaire />
       </>
     </Landinglayout>
   );
