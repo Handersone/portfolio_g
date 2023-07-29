@@ -10,7 +10,7 @@ import {
 } from "@material-tailwind/react";
 // import log from "../../assets/log.jpg";
 // import {useNavigate} from "react-router-dom"
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Formulaire from "../formulaire/Formulaire";
  
 export default function Example() {
@@ -71,8 +71,8 @@ export default function Example() {
  
   return (
     <div class="">
-    <Navbar className="fixed  bg-[#1f1f1f] border-none">
-      <div className="ml-11 flex items-center justify-between text-blue-gray-900 mr-12">
+    <Navbar className="fixed  bg-[#1f1f1f] border-none p-2">
+      <div className="ml-11 flex items-center justify-between text-blue-gray-900 mr-12 ">
         
           {/* <Avatar
             alt="owlcrea"
@@ -92,7 +92,7 @@ export default function Example() {
         <Button variant="gradient" size="sm" className="bg-indigo-600 hidden lg:inline-block mr-12">
           {/* <span></span> */}
           
-            <Link to=".." relative="formulaire">
+            <Link to="/formulaire">
             Contacter moi
             </Link>
         </Button>
@@ -137,7 +137,7 @@ export default function Example() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="bg-indigo-600 mb-2 mr-12"  onClick={this.faireRedirection}>
+          <Button variant="gradient" size="sm" fullWidth className="bg-indigo-600 mb-2 mr-12">
           <span>Contacter moi</span>
           </Button>
         </div>

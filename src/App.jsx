@@ -15,7 +15,7 @@ function App() {
         <Route path="*" element={<Page404 />}></Route>
         <Route path="/" element={<Landingpage />}></Route>
         <Route path="/portfolio" element={<Landingportfolio />}></Route>
-        <Route path="/formulaire" element={<Landingpage />}></Route>
+        <Route path="/formulaire" element={<Landingpage />} />
       </Routes>
     </Router>
   );
