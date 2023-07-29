@@ -1,13 +1,9 @@
 import React from "react";
 import PortfolioCard from "../../components/Card/PortfolioCard";
 // import Adobe from '../../assets/Adobe.webp';
-import aside from "../../assets/aside.webp";
 import { Button } from "@material-tailwind/react";
-import Refonte from "../../assets/Refonte.webp";
-import coupePouce from "../../assets/coupePouce.webp";
-import Augmente from "../../assets/Augmente.webp";
-import goumete from "../../assets/goumete.webp";
-import interf from "../../assets/interf.webp";
+import CaptureGL from "../../assets/CaptureGL.jpg";
+import Generateur from "../../assets/Generateur.jpg";
 
 
 function Portfolio() {
@@ -16,46 +12,18 @@ function Portfolio() {
   const portfolios = [
     {
       id: 0,
-      url: goumete,
+      url: CaptureGL,
     // <img decoding="async" width="722" height="672" src="https://owlcrea.com/media/2022/10/Frame-13.png" class="elementor-animation-grow attachment-full size-full wp-url-1628" alt="Suite-adobe" loading="lazy" srcset="https://owlcrea.com/media/2022/10/Frame-13.png.webp 722w, https://owlcrea.com/media/2022/10/Frame-13-300x279.png.webp 300w" sizes="(max-width: 722px) 100vw, 722px">
-      title: "Gourmet Fin - DIgital Valley",
+      title: "E-Orientation",
       description:
-        "MAQUETTAGE WEB – SITE WEB",
+        "SITE WEB D'ORIENTATION UNIVERSITAIRES",
     },
     {
       id: 1,
-      url: coupePouce,
-      title: "Coup de pouce - Evry courcouronnes​",
+      url: Generateur,
+      title: "Generateur​",
       description:
-        "SITE WEB – REFERENCEMENT SEO",
-    },
-    {
-      id: 3,
-      url: Refonte,
-      title: "WAKANBIO​",
-      description:
-        "AUDIT UI/UX – REFERENCEMENT SEO",
-    },
-    {
-      id: 4,
-      url: Augmente,
-      title: "DRWINTECH INC BENIN",
-      description:
-        "MAQUETTAGE WEB – SITE WEB",
-    },
-    {
-      id: 1,
-      url: interf,
-      title: "Visuel pour WAKANBIO​",
-      description:
-        "VISUEL – REFERENCEMENT SMO",
-    },
-    {
-      id: 3,
-      url: Refonte,
-      title: "Projet refonte web SBEE​",
-      description:
-        "AUDIT UI/UX – MAQUETTAGE WEB",
+        "GENERATEUR DE RESSOURCES",
     },
   ];
 
@@ -71,7 +39,7 @@ function Portfolio() {
         </div>      
         
       </div>
-      <div className=" grid content-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
+      <div className=" grid content-center grid-cols-1 md:grid-cols-4 lg:grid-cols-4">
         {portfolios.map((item) => {
           return (
             <PortfolioCard

@@ -11,8 +11,8 @@ function Landingpage() {
         <About />
         <Language />
         <Service />
-        {/* <Portfolio /> */}
-        <Client />
+        <Portfolio />
+        {/* <Client /> */}
         <Projet />
         <Formulaire />
       </>

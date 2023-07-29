@@ -22,9 +22,14 @@ function Projet() {
       </div>
       <div className=" grid grid-cols-2 bg-[#1f1f1d] pl-12">
         <div className="text-white mt-12 pt-12">
-            <div className="text-[40px] font-extrabold pt-12 mt-12">Parlons de votre projet</div>
-            Avez-vous un projet ? Un business ? Vous souhaitez encore plus de visibilité, plus de clients, plus de rentabilité ? Plus de visibilité et de clients?
-        </div>
+          <div className="text-[40px] font-extrabold pt-12 mt-12">Parlons de votre projet</div>
+            <ul>
+              <li> Avez-vous un projet ?</li>
+              <li>Un business ?</li>
+              <li>Vous souhaitez encore plus de visibilité, plus de clients, plus de rentabilité ?</li>
+              <li> Plus de visibilité et de clients?</li>
+            </ul>
+          </div>
         <div>
         {projets.map((item) => {
           return (

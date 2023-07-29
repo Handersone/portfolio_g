@@ -9,6 +9,9 @@ import {
   Avatar,
 } from "@material-tailwind/react";
 // import log from "../../assets/log.jpg";
+// import {useNavigate} from "react-router-dom"
+import { Link } from "react-router-dom";
+import Formulaire from "../formulaire/Formulaire";
  
 export default function Example() {
   const [openNav, setOpenNav] = useState(false);
@@ -23,6 +26,8 @@ export default function Example() {
   //     url: log,
   //   },
   // ]
+    const navigate = useNavigate();
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       <Typography
@@ -85,7 +90,11 @@ export default function Example() {
         
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="bg-indigo-600 hidden lg:inline-block mr-12">
-          <span>Contacter moi</span>
+          {/* <span></span> */}
+          
+            <Link to=".." relative="formulaire">
+            Contacter moi
+            </Link>
         </Button>
         <IconButton
           variant="text"
@@ -128,7 +137,7 @@ export default function Example() {
       <MobileNav open={openNav}>
         <div className="container mx-auto">
           {navList}
-          <Button variant="gradient" size="sm" fullWidth className="bg-indigo-600 mb-2 mr-12">
+          <Button variant="gradient" size="sm" fullWidth className="bg-indigo-600 mb-2 mr-12"  onClick={this.faireRedirection}>
           <span>Contacter moi</span>
           </Button>
         </div>
